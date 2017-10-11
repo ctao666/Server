@@ -1,0 +1,11 @@
+CC = gcc -std=gnu99 -lpthread 
+
+
+
+server: server.c sha256.h sha256.c uint256.h byte_typedef.h
+	$(CC) -g -o server server.c sha256.c
+
+
+
+
+
